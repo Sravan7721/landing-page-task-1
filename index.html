@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Responsive Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">Web<span>Craft</span></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <h2>Design. Build. Grow.</h2>
+      <p>We help you craft stunning websites that attract and engage your audience.</p>
+      <a href="#services" class="btn">Explore Services</a>
+    </div>
+  </section>
+
+  
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="card">
+          <h3>Web Design</h3>
+          <p>Beautiful, responsive designs crafted to suit your brand’s identity.</p>
+        </div>
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>High-performing and scalable websites using the latest technologies.</p>
+        </div>
+        <div class="card">
+          <h3>SEO Optimization</h3>
+          <p>Improve your website ranking and get discovered by the right audience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>✔ 100% Responsive Designs</li>
+        <li>✔ Fast Load Times</li>
+        <li>✔ SEO & Mobile Friendly</li>
+        <li>✔ Easy Customization</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <div class="container about-content">
+      <h2>About Us</h2>
+      <p>At WebCraft, we blend creativity with technology to create digital experiences that leave a lasting impression. Our goal is to empower businesses through modern web design and development practices.</p>
+    </div>
+  </section>
+
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have a project in mind? Let’s work together!</p>
+      <p>     .  </p>
+      <a href="mailto:contact@webcraft.com" class="btn">Send Message</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-container">
+      <p>© 2025 WebCraft. All rights reserved.</p>
+      <div class="socials">
+        <a href="#">🌐</a>
+        <a href="#">🐦</a>
+        <a href="#">📘</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SMOOTH SCROLL -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
